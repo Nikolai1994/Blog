@@ -1,5 +1,5 @@
 <?php
-
+if(!defined("INDEX")) die("<center><font style='color:#505050; font-size:12px;'>Ошибка!</font></center>");
 # Файл EngineX.php
 # Предназначен для установки заголовков страниц,
 # и вызова определённых действий при переходе на
