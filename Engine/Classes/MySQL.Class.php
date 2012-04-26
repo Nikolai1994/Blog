@@ -5,6 +5,8 @@
  */
 
 class MySQL {
+    var $Error = "0";
+    var $ErrorText = Array();
     
     # Функция подключения к серверу MySQL
     function Connect($ServerMySQL, $UserMySQL, $PasswordMySQL) {
