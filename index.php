@@ -25,7 +25,7 @@ Echo "
     <a href=\"/\">Главная</a><br />
     <a href=\"?action=register\">Регистрация</a>
 </div>
-<div id=\"footer\">Веслия системы ".$Global->EngineVersion."</div>
+<div id=\"footer\">Версия системы ".$Global->EngineVersion."</div>
 </div>
 </body>
 </html>";
