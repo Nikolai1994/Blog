@@ -3,6 +3,7 @@
 include("Engine/Classes/Global.Class.php");
 include("Engine/Classes/MySQL.Class.php");
 include("Engine/Classes/Main.Class.php");
+
 # Инициализируем классы (Важно соблюдение порядка инициализации!)
 $Global = new GlobalClass;
 $MySQL = new MySQL;
