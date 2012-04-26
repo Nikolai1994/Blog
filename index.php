@@ -1,4 +1,6 @@
 <?php
+define("INDEX", "yes"); // Небольшое условие для выполнения подключаемых скриптов.
+
 # Подключаем классы
 include("Engine/Classes/Global.Class.php");
 include("Engine/Classes/MySQL.Class.php");
