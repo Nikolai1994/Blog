@@ -1,0 +1,5 @@
+RewriteEngine On
+AddDefaultCharset UTF-8
+
+#   "Прячем" физическую дерикторию стилей сайта
+RewriteRule ^Styles/(.*) /Engine/Styles/$1 [L]
