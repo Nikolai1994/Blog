@@ -5,9 +5,10 @@ if(!defined("INDEX")) die("<center><font style='color:#505050; font-size:12px;'>
  */
 
 class MySQL {
+
     var $Error = "0";
     var $ErrorText = Array();
-    
+
     # Функция подключения к серверу MySQL
     function Connect($ServerMySQL, $UserMySQL, $PasswordMySQL) {
         $Connect = @mysql_connect($ServerMySQL, $UserMySQL, $PasswordMySQL);
@@ -19,7 +20,7 @@ class MySQL {
             return false;
         }
     }
-    
+
     # Функция подключения к БД MySQL
     function Select($DataBaseMySQL) {
         If ($this->Error == "1") {
@@ -35,7 +36,18 @@ class MySQL {
             return false;
         }
     }
-    
+
+    # Функция запроса к БД
+    function DbQuery($Query) {
+        $Result = @mysql_query($Query);
+        if (!$Result) {
+            echo mysql_error();
+            return false;
+        } else {
+            return $Result;
+        }
+    }
+
 }
 
 ?>
