@@ -7,7 +7,7 @@ if(!defined("INDEX")) die("<center><font style='color:#505050; font-size:12px;'>
 
 class GlobalClass {
     # Глобальные конфигурации
-    var $EngineVersion = "0.0.1";
+    var $EngineVersion = "0.0.2";
     
     
 }
